@@ -1,4 +1,5 @@
 import express from "express"
+import firstRoutes from "./src/routes/FirststRoutes.js";
 let app = express();
 
 app.listen(8000,()=>{
@@ -15,15 +16,5 @@ app.post("/",(req,res,next)=> {
 
     console.log("a");
 });
-app.get("/",(req,res,next)=>{
 
-    console.log("b");
-});
-app.patch("/",(req,res,next)=> {
-
-    console.log("c");
-});
-app.delete("/",(req,res,next)=>{
-
-    console.log("d");
-});
+app.use(firstRoutes);
