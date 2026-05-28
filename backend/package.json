@@ -1,0 +1,26 @@
+{
+  "name": "mern_stack_basic",
+  "version": "1.0.0",
+  "description": "mern stack basics",
+  "main": "global.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushkli86/mern_stack_basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ayushkli86/mern_stack_basic/issues"
+  },
+  "homepage": "https://github.com/ayushkli86/mern_stack_basic#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
