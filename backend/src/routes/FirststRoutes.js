@@ -14,10 +14,17 @@ firstRoutes
     cosole.log("b")
 });
 firstRoutes
-.route("/job")
+.route("/:id")//localhost:8000/j name haleni vayo 
 .get((req,res,next)=>{
 
-    console.log("here are your  jobs")
+    console.log("dynamic api names")
+})
+firstRoutes
+.route("/:id/a/:id2")//localhost:8000/ayush/a/katuwal
+.get((req,res,next)=>{
+
+    console.log("dynamic api names")
+    console.log(req.params)
 })
 .post((req,res,next)=>{
     console.log("here are your contacts")
@@ -26,4 +33,8 @@ firstRoutes
 export default firstRoutes;
 /* 
  api bnaune aba */
+
+ /* dynamic parents  :halesi j haleni hunxa api ko name  */
+
+
 
