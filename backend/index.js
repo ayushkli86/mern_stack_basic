@@ -13,9 +13,5 @@ app.use(json());//makes our backend to take data from postman
 //read,get 
 // update,patch 
 // delete, delete
-app.post("/",(req,res,next)=> {
-
-    console.log("a");
-});
 
 app.use(firstRoutes);

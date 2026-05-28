@@ -7,6 +7,7 @@ let firstRoutes = Router()
 firstRoutes
 .route("/")
 .get((req,res,next)=>{
+    console.log(req.body);
     console.log("a");
 })
 .post((req,res,next)=>{
