@@ -15,10 +15,7 @@ firstRoutes
 });
 firstRoutes
 .route("/:id")//localhost:8000/j name haleni vayo 
-.get((req,res,next)=>{
 
-    console.log("dynamic api names")
-})
 firstRoutes
 .route("/:id/a/:id2")//localhost:8000/ayush/a/katuwal
 .get((req,res,next)=>{

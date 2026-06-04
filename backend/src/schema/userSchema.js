@@ -2,7 +2,7 @@ import { Schema,model } from  "mongoose"
 let userSchema = Schema({
     name:{
         type:String,
-        rewuired:[true,"name is required"]
+        required:[true,"name is required"]
     },
     address:{
         type:String,
@@ -22,5 +22,5 @@ let userSchema = Schema({
         required:[true,"phone no is required"]
     }
 });
-let User = model("User",userSchema);m
+let User = model("User",userSchema);
 export default User;
