@@ -1,0 +1,4 @@
+react consider tag as data 
+we can store and return tag 
+fucntion can return only one tag
+use currly braces {} tag to perform  js operation 
