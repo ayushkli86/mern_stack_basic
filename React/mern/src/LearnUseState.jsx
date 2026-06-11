@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const LearnUseState = () => {
 
     let [name,setName] =useState("ayush")
+    let [count,setCount]=useState(1);
   return (
     <div>
         <p>name is {name}</p>
@@ -13,6 +14,9 @@ const LearnUseState = () => {
         }}>
 
         </button>
+        <button onClick ={()=>{setCount(count+1)}}>+</button>
+        <button onClick ={()=>{setCount(count-1)}}>-</button>
+        <p>the count is{count}</p>
     </div>
   )
 }
