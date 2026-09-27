@@ -1,0 +1,54 @@
+
+/* Base Navigation Bar Container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+    font-family: system-ui, -apple-system, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Individual Links Style */
+.nav-container a {
+    color: #b5b5c3;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    white-space: nowrap; /* Prevents text from breaking onto two lines */
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+
+/* Hover Effect */
+.nav-container a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Built-in Active Styling for React Router NavLink */
+.nav-container a.active {
+    color: #4fc3f7;
+    background-color: rgba(79, 195, 247, 0.1);
+    font-weight: 600;
+}
+
+/* Responsive Rules for Mobile Devices (under 768px wide) */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0.75rem 1rem;
+        gap: 0.5rem;
+        overflow-x: auto; /* Allows horizontal swiping on mobile screens */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    }
+
+    /* Adjust padding slightly for better tap targets on touch screens */
+    .nav-container a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
